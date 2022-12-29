@@ -10,7 +10,7 @@
 }
 
 body{
-    font-family: 'Roboto', Raleway;
+    font-family: 'Roboto', sans-serif;
     color: var(--navy-blue-color);
     width: 1440px;
 }
@@ -28,13 +28,14 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    color: var(--navy-blue-color);
 }
 
 .logo > span {
     color: var(--iris-color);
 }
 
-.nav-list a {
+.nav-item {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -43,13 +44,20 @@ body{
     text-transform: capitalize;
     letter-spacing: 0.02em;
     text-decoration: none;
+    color: var(--navy-blue-color);
 }
 
-.contact a {
+.nav-item:hover, .nav-item:focus {
+    color: var(--iris-color)
+}
+
+.contact-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    font-style: normal;
+    color: var(--body-text-color);
 }
 
 .contact-item:hover, .contact-item:focus {
@@ -58,7 +66,6 @@ body{
 
 .hero{
     background-color: var(--navy-blue-color);
-    height: 600px;
 }
 
 .hero-title{
@@ -78,7 +85,7 @@ body{
     height: 56px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -98,6 +105,7 @@ body{
     border: 1px solid var(--accent-color);
     border-radius: 4px;
     height: 48px;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -110,13 +118,6 @@ body{
     color: var(--white-color)
 }
 
-.portfolio-item > h3{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
 .portfolio-item > p{
     font-size: 16px;
     line-height: 1.5;
@@ -125,7 +126,7 @@ body{
 }
 
 .invisible-title{
-    color: rgba(0,0,0,0)
+    opacity: 0;
 }
 
 .subtitle{
@@ -140,6 +141,23 @@ body{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em; 
+    text-transform: capitalize;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+}
+
+.works-title, .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
 .footer{
